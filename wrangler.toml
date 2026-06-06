@@ -1,25 +1,2 @@
 name = "bookmark-manager"
-type = "service"
-main = "src/worker.js"
-compatibility_date = "2024-12-16"
-
-# Cloudflare Pages configuration
-pages_build_output_dir = "dist"
-
-# D1 Database Binding
-[[d1_databases]]
-binding = "DB"
-database_name = "bookmark-manager-db"
-database_id = "your-database-id"
-
-# Environment variables
-[env.production]
-name = "bookmark-manager-prod"
-routes = [
-  { pattern = "api.yourdomain.com/*", zone_name = "yourdomain.com" }
-]
-
-# Build configuration for Pages
-[build]
-command = "npm run build"
-cwd = "./"
+   compatibility_date = "2024-12-16"
